@@ -1,38 +1,75 @@
 .App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App h1 {
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+  padding: 15px 0px;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.TaskInput {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TaskInput input {
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 2px;
+  margin: 20px 30px;
+  padding: 5px 5px;
+  display: block;
+  width: 50%;
+}
+
+.TaskInput button {
+  margin: 20px 0px;
+  padding: 10px 10px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.TaskInput button:hover {
+  background-color: rgb(20, 20, 20);
+}
+
+.TaskAdded h1 {
+  margin: 0px 0px;
+  background-color: white;
+  color: black;
+}
+
+.TaskAdded li {
+  margin: 0px 20px;
+  padding: 0px 20px;
+  background: #e2e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.TaskAdded li button {
+  margin: 10px 0px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(224, 7, 7);
+  color: rgb(255, 255, 255);
+  /* font-weight: bold; */
+  
 }
